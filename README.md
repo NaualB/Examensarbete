@@ -35,17 +35,7 @@ Instead focus on the good practices we have learned from the previouse exercises
 * Find and navigate to the *Robot Framework fundamentals training* -page
 * Verify duration is one day
 
-### Stockholm office is visible in Sweden contact info
 
-* Navigate to [eficode.com/contact](https://www.eficode.com/contact)
-* Select Sweden from the countries filter
-* Verify that Stockholm office contact information is visible
-
-### (optional) Helsinki office is not visible in Sweden contact info
-
-* Navigate to [eficode.com/contact](https://www.eficode.com/contact)
-* Select Sweden from the countries filter
-* Verify that Helsinki office contact information is **not** visible 
 
 ## GitHub Actions
 
@@ -54,13 +44,3 @@ The repository already has a workflow for running Robot Framework tests. Now we 
 To run the linter you will need to first install the `robotframework-robocop` python package. Then simply running `robocop` on the top level of the repository will check the tests for any errors or violations to code quality standards.
 
 [Basics of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#workflows)
-
-### The exercise
-
-1. Make a new workflow file under `.github/workflows` called for example *lint.yml*
-2. Have the workflow run on every push
-3. Define a job to:
-   1. checkout the code
-   2. install the `robotframework-robocop` python package
-   3. run the linter
-4. (optional) Fix issues or edit rules
