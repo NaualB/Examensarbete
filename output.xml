@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221212 21:54:15.345" rpa="false" schemaversion="3">
+<suite id="s1" name="Footertests" source="c:\Users\Admin\OneDrive\Skrivbord\Examensarbete\Testkod\Examensarbete\tests\footertests.robot">
+<test id="s1-t1" name=" TetraPak Footer" line="6">
+<kw name="New Browser" library="Browser">
+<arg>headless=${FALSE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20221212 21:54:18.007" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Examensarbete\\Testkod\\Examensarbete\\browser\\traces\\76e9af4d-d611-4356-9f40-dfe141396077"}</msg>
+<msg timestamp="20221212 21:54:19.466" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\Admin\\OneDrive\\Skrivbord\\Examensarbete\\Testkod\\Examensarbete\\browser\\traces\\76e9af4d-d611-4356-9f40-dfe141396077"}</msg>
+<status status="PASS" starttime="20221212 21:54:18.006" endtime="20221212 21:54:19.466"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://www.tetrapak.com/sv-se</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20221212 21:54:21.683" level="INFO">Successfully initialized new page object and opened url: https://www.tetrapak.com/sv-se</msg>
+<msg timestamp="20221212 21:54:21.684" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20221212 21:54:19.487" endtime="20221212 21:54:21.685"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath =//a[contains(text(),'Om Tetra Pak')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221212 21:54:21.696" endtime="20221212 21:54:30.250"/>
+</kw>
+<status status="PASS" starttime="20221212 21:54:17.999" endtime="20221212 21:54:30.264"/>
+</test>
+<status status="PASS" starttime="20221212 21:54:15.359" endtime="20221212 21:54:30.783"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Footertests">Footertests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
